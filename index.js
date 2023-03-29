@@ -41,7 +41,7 @@ for (let i of numeros){
 
 
 const numeros = [1,2,3,4,5]
-
+/*
 //const n = numeros.find(function(v){
 //    return ( v % 2 === 0)
 //   
@@ -49,4 +49,11 @@ const numeros = [1,2,3,4,5]
 
 const n = numeros.find(v => v%2 === 0 )
 
-console.log(n)
+console.log(n)*/
+
+
+const pos = numeros.findIndex(v => v%2===0)
+console.log('Posição: ', pos)
+
+const ultimoNPar = numeros.findLast(v=> v%2 ===0)
+console.log('Último par: ',ultimoNPar)
